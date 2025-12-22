@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="PulseCity — события и новости города (статический макет)" />
+  <title>PulseCity — Новости и события</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="index.html" aria-label="На главную">
+        <span class="brand__dot" aria-hidden="true"></span>
+        PulseCity
+      </a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="nav__link" href="#today">Сегодня</a>
+        <a class="nav__link" href="#events">Афиша</a>
+        <a class="nav__link" href="#tech">Технологии</a>
+        <a class="nav__link" href="#sports">Спорт</a>
+      </nav>
+
+      <div class="topbar__actions">
+        <a class="button button--ghost" href="news.html">Читать новость</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container layout" id="top">
+    <section class="feed" aria-label="Лента материалов">
+      <article class="hero" id="today">
+        <div class="hero__content">
+          <p class="badge">Главное за день</p>
+          <h1 class="hero__title">
+            В PulseCity открыли «умную» остановку с e-ink табло и Wi-Fi
+          </h1>
+          <p class="hero__text">
+            Новая остановка показывает расписание в реальном времени, имеет USB-зарядку и подсветку.
+            Проект пилотный: в течение месяца соберут отзывы горожан.
+          </p>
+          <div class="hero__meta">
+            <span class="meta">12 декабря 2025</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span class="meta">Технологии</span>
+          </div>
+          <div class="hero__buttons">
+            <a class="button" href="news.html">Открыть статью</a>
+            <a class="button button--ghost" href="#events">Смотреть афишу</a>
+          </div>
+        </div>
+
+        <div class="hero__media" aria-label="Иллюстрация">
+          <div class="hero__img" role="img" aria-label="Абстрактная обложка новости"></div>
+        </div>
+      </article>
+
+      <div class="chips" aria-label="Категории">
+        <a class="chip chip--active" href="#top">Все</a>
+        <a class="chip" href="#events">Мероприятия</a>
+        <a class="chip" href="#tech">ИТ</a>
+        <a class="chip" href="#sports">Спорт</a>
+        <a class="chip" href="#culture">Культура</a>
+      </div>
+
+      <div class="cards" aria-label="Карточки новостей">
+        <article class="card" id="events">
+          <a class="card__cover" href="news.html" aria-label="Открыть новость про фестиваль света">
+            <span class="tag">Афиша</span>
+          </a>
+          <div class="card__body">
+            <h2 class="card__title">
+              <a href="news.html">Фестиваль света: 12 инсталляций и ночные экскурсии</a>
+            </h2>
+            <p class="card__text">
+              В эти выходные на набережной появятся проекции на зданиях, музыка и интерактивные арт-объекты.
+            </p>
+            <div class="card__meta">
+              <span class="meta">14 декабря 2025</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="meta">19:00–23:30</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="tech">
+          <a class="card__cover card__cover--tech" href="news.html" aria-label="Открыть новость про хакатон">
+            <span class="tag tag--tech">ИТ</span>
+          </a>
+          <div class="card__body">
+            <h2 class="card__title"><a href="news.html">Студенческий хакатон: AI-боты для городских сервисов</a></h2>
+            <p class="card__text">
+              Команды за 24 часа соберут прототипы, которые упрощают запись к врачу, поиск парковки и навигацию.
+            </p>
+            <div class="card__meta">
+              <span class="meta">18 декабря 2025</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="meta">Кампус №3</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="sports">
+          <a class="card__cover card__cover--sport" href="news.html" aria-label="Открыть новость про забег">
+            <span class="tag tag--sport">Спорт</span>
+          </a>
+          <div class="card__body">
+            <h2 class="card__title"><a href="news.html">Зимний забег 5 км: трасса по парку и горячий чай</a></h2>
+            <p class="card__text">
+              Регистрация открыта до пятницы. Будут медали финишёрам, тёплая зона и камеры хранения.
+            </p>
+            <div class="card__meta">
+              <span class="meta">21 декабря 2025</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="meta">09:30</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" id="culture">
+          <a class="card__cover card__cover--culture" href="news.html" aria-label="Открыть новость про выставку">
+            <span class="tag tag--culture">Культура</span>
+          </a>
+          <div class="card__body">
+            <h2 class="card__title"><a href="news.html">Выставка «Город в деталях»: макеты и редкие фото</a></h2>
+            <p class="card__text">
+              Экспозиция рассказывает, как менялись улицы и транспорт. Есть аудиогид и зона для детей.
+            </p>
+            <div class="card__meta">
+              <span class="meta">до 30 декабря</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="meta">Музей</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__cover card__cover--neutral" href="news.html" aria-label="Открыть новость про волонтёров">
+            <span class="tag">Город</span>
+          </a>
+          <div class="card__body">
+            <h2 class="card__title"><a href="news.html">Волонтёры запустили карту доступной среды для района</a></h2>
+            <p class="card__text">
+              На карте отмечены пандусы, лифты, широкие входы и маршруты без лестниц — данные открытые.
+            </p>
+            <div class="card__meta">
+              <span class="meta">10 декабря 2025</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="meta">Сообщество</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <a class="card__cover card__cover--neutral2" href="news.html" aria-label="Открыть новость про лекцию">
+            <span class="tag tag--tech">Лекция</span>
+          </a>
+          <div class="card__body">
+            <h2 class="card__title"><a href="news.html">Лекция: как устроены нейросети и почему они ошибаются</a></h2>
+            <p class="card__text">
+              Разберём примеры, поговорим про данные, смещения и безопасность. Формат — 60 минут + вопросы.
+            </p>
+            <div class="card__meta">
+              <span class="meta">16 декабря 2025</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span class="meta">Онлайн</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="sidebar" aria-label="Боковая колонка">
+      <div class="panel panel--sticky">
+        <h2 class="panel__title">Календарь недели</h2>
+
+        <ul class="list">
+          <li class="list__item">
+            <span class="list__badge">Вт</span>
+            <div class="list__text">
+              <strong>Киноклуб: фантастика</strong>
+              <span class="muted">19:00 • Дом культуры</span>
+            </div>
+          </li>
+          <li class="list__item">
+            <span class="list__badge">Чт</span>
+            <div class="list__text">
+              <strong>Meetup Frontend</strong>
+              <span class="muted">18:30 • Coworking</span>
+            </div>
+          </li>
+          <li class="list__item">
+            <span class="list__badge">Сб</span>
+            <div class="list__text">
+              <strong>Фестиваль света</strong>
+              <span class="muted">19:00 • Набережная</span>
+            </div>
+          </li>
+        </ul>
+
+        <div class="panel__cta">
+          <a class="button button--full" href="news.html">Случайная новость</a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2 class="panel__title">Подборка</h2>
+        <div class="mini">
+          <a class="mini__item" href="news.html">
+            <span class="mini__dot" aria-hidden="true"></span>
+            <span class="mini__text">5 мест, где зимой уютно работать с ноутбуком</span>
+          </a>
+          <a class="mini__item" href="news.html">
+            <span class="mini__dot mini__dot--tech" aria-hidden="true"></span>
+            <span class="mini__text">Плейлист недели: lo-fi для концентрации</span>
+          </a>
+          <a class="mini__item" href="news.html">
+            <span class="mini__dot mini__dot--sport" aria-hidden="true"></span>
+            <span class="mini__text">Как подготовиться к забегу на морозе</span>
+          </a>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">PulseCity</p>
+      <p class="footer__text">Статический учебный проект • HTML + CSS • 2025</p>
+      <a class="footer__link" href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
