@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Калькулятор</title>
+  <link rel="stylesheet" href="styles.css" />
+  
+  <link rel="icon" href="calc-favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo">∑</div>
+        <div>
+          <div class="title">Web калькулятор</div>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <button id="toggleHistoryBtn" class="btn ghost" type="button" aria-expanded="true">
+          Журнал
+        </button>
+        <button id="clearAllBtn" class="btn danger ghost" type="button" title="Очистить всё">
+          Очистить
+        </button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="calculator card" aria-label="Калькулятор">
+        <div class="display">
+          <div id="exprDisplay" class="expr" aria-label="Выражение">0</div>
+          <div id="resultDisplay" class="result" aria-label="Результат">0</div>
+        </div>
+
+        <div class="keypad" aria-label="Кнопки калькулятора">
+          <button class="key ghost" data-action="clear">C</button>
+          <button class="key ghost" data-action="backspace">⌫</button>
+          <button class="key ghost" data-action="paren">( )</button>
+          <button class="key op" data-value="/">÷</button>
+
+          <button class="key" data-value="7">7</button>
+          <button class="key" data-value="8">8</button>
+          <button class="key" data-value="9">9</button>
+          <button class="key op" data-value="*">×</button>
+
+          <button class="key" data-value="4">4</button>
+          <button class="key" data-value="5">5</button>
+          <button class="key" data-value="6">6</button>
+          <button class="key op" data-value="-">−</button>
+
+          <button class="key" data-value="1">1</button>
+          <button class="key" data-value="2">2</button>
+          <button class="key" data-value="3">3</button>
+          <button class="key op" data-value="+">+</button>
+
+          <button class="key ghost" data-value="%">%</button>
+          <button class="key" data-value="0">0</button>
+          <button class="key ghost" data-value=".">.</button>
+          <button class="key eq" data-action="equals">=</button>
+
+          <button class="key wide ghost" data-value="^">xʸ</button>
+          <button class="key wide ghost" data-action="ans">ANS</button>
+        </div>
+
+        <div class="hint">
+          <span>Клавиатура: цифры, <kbd>+</kbd> <kbd>-</kbd> <kbd>*</kbd> <kbd>/</kbd> <kbd>%</kbd> <kbd>^</kbd>, скобки, <kbd>Enter</kbd> =, <kbd>Backspace</kbd>, <kbd>Esc</kbd>.</span>
+        </div>
+      </section>
+
+      <aside id="historyPanel" class="history card" aria-label="Журнал вычислений">
+        <div class="history-head">
+          <div>
+            <div class="history-title">Журнал</div>
+            <div class="history-subtitle">Нажми на запись, чтобы подставить</div>
+          </div>
+          <button id="clearHistoryBtn" class="btn ghost danger" type="button">Очистить журнал</button>
+        </div>
+
+        <div id="historyList" class="history-list" role="list"></div>
+
+        <div id="historyEmpty" class="history-empty">
+          Пока пусто. Посчитай что-нибудь 🙂
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <span>Поддерживает локальное сохранение</span>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
