@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Одностраничное резюме">
+    <meta name="keywords" content="Резюме, HTML, frontend, разработчик">
+    <meta name="author" content="Николай Соловьев">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Резюме — Николай Соловьев</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<!-- ===== Навигация ===== -->
+    <header>
+        <h1>Резюме</h1>
+    <nav>
+        <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#education">Образование</a></li>
+            <li><a href="#projects">Яркие проекты</a></li>
+            <li><a href="#skills">Текущие навыки</a></li>
+            <li><a href="#cools">Интересный факт</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+    <hr>
+</header>
+
+<!-- ===== Основная информация ===== -->
+<main>
+
+<section id="about">
+    <h2>Обо мне</h2>
+    <p>
+        Меня зовут <strong>Николай Соловьев</strong>.  
+        Я <em>студент четвертого курса РТУ МИРЭА</em>, учусь по специальности <mark style="color:blue;background-color: aqua;">инженер-инфраструктурщик.</mark></section>
+
+<hr>
+
+<!-- ===== Образование ===== -->
+<section id="education">
+    <h2>Образование</h2>
+
+    <table border="1">
+        <caption><strong>Таблица программ обучений</strong></caption>
+        <thead>
+            <tr>
+                <th>Годы</th>
+                <th>Программа РТУ МИРЭА</th>
+                <th>Специальность</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2022 &mdash; текущий год</td>
+                <td>Главный курс обучения</td>
+                <td>Инфраструктурщик</td>
+            </tr>
+            <tr>
+                <td>2024 &mdash; 2025</td>
+                <td>Программа Цифровой Кафедры</td>
+                <td>Мобильная разработка на Kotlin</td>
+            </tr>
+            <tr>
+                <td>2024 &mdash; 2025</td>
+                <td rowspan="2">Программа Элитной Подготовки</td>
+                <td>Нейронные сети</td>
+            </tr>
+            <tr>
+                
+                <td>2025 &mdash; текущий год</td>
+                <td>Веб-разработка</td>
+            </tr>
+
+        </tbody>
+    </table>
+</section>
+
+<hr>
+
+<!-- ===== Проекты ===== -->
+<section id="projects">
+    <h2><u style="text-decoration: underline wavy cyan;">Моя яркие проекты</u></h2>
+
+    <article>
+        <h3>Программа для проведения экспериментов по изучению мозга во время сна</h3>
+        <h4>Описание</h4>
+        <p>
+            Данный проект представляет себя графическую программу для проведения <u>экспериментов по изучению работы мозга после пробуждения из быстрой фазы сна.</u><br>
+            Программа интегрируется с устройством <b>регистрации ЭЭГ</b>, <u>выставляя на графике временные метки.</u><br>
+            Этот проект до сих пор используется и обновляется новыми <s>пытками</s> <i>видами экспериментов</i>. 
+        </p>
+        <p>GitHub репозиторий: <a href="https://github.com/NikoSolov/SleepResearch" target="_blank">github.com/NikoSolov/SleepResearch</a> 
+        </p>
+        
+        <h3>Мобильное приложения для подсчета багажа на изображении</h3>
+        <p>
+            Данный проект представляет себя приложение, с помощью которого можно подсчитать рюкзаки и сумки на сделанном фото и видео с использованием сервиса REST API с искусственным интеллектом.
+        </p>
+        <p>GitHub репозиторий: <a href="https://github.com/NikoSolov/BagCount-Mobile" target="_blank">github.com/NikoSolov/BagCount-Mobile</a> 
+        </p>
+        
+    </article>
+</section>
+
+<hr>
+
+
+<!-- ===== Навыки ===== -->
+<section id="skills">
+    <h2>Текущие технические навыки</h2>
+        <h3></h3>
+        <ol>
+            <li>Знание разных языков:
+                <ul>
+                    <li>Python</li> 
+                    <li>С++</li> 
+                    <li>Verilog</li>
+                    <li>Kotlin</li>
+                </ul>
+            <li>Проектировать и обучать модели для машинного обучения</li>
+            <li>Разрабатывать мобильные приложения на языке Kotlin</li>
+            <li>Разрабытвать небольшие веб-сервисы на основе REST API на Python</li>
+            <li>Cоздавать визуально красивые графические математические эффекты</li>
+        </ol>
+</section>
+
+<hr>
+<!-- ===== Видео (доп. баллы) ===== -->
+<section id="cools">
+    <h2>Интересный факт обо мне</h2>
+
+    <p>Меня интересует совместимость приложений в разных устройствах просмотра и желаю, чтобы каждому любой сервис был доступен даже с утюга.<br>Как например, на рисунках ниже представлено отображение текущей страницы в терминальном браузере <a href="https://chawan.net/">chawan</a>.<br> Этот браузер позволяет не только отображать текст и таблицы, но и отображать его <b>на</b><u>че</u><i>рта</i><s>ния</s>, <mark style="color:blue;background-color: aqua;">цв</mark><mark style="color:green;background-color:white;">е</mark><mark style="color:cyan;background-color:purple;">та</mark> и многое другое</p>
+
+    <center>
+    
+    <img src="photo1.png" width="500" alt="Рисунок 1 - Скриншот терминала">
+
+    <img src="photo2.png" width="500" alt="Рисунок 2 - Скриншот терминала">
+ 
+    </center>
+    <!-- Альтернатива через iframe -->
+    <!--
+    <iframe width="300" height="200"
+        src="https://www.youtube.com/embed/VIDEO_ID"
+        title="Видео обо мне">
+    </iframe>
+    -->
+</section>
+
+<hr>
+
+</main>
+
+<!-- ===== Контакты ===== -->
+<footer id="contacts">
+    <h2>Контакты</h2>
+
+    <address>
+        <p>Телефон:
+            <a href="tel:+79165461176">+7 (916) 546-11-76</a>
+        </p>
+
+        <p>Email:
+            <a href="mailto:claussolov7939@gmail.com">claussolov7939@gmail.com</a>
+        </p>
+
+        <p>GitHub:
+            <a href="https://github.com/NikoSolov" target="_blank">
+                github.com/NikoSolov
+            </a>
+        </p>
+        <p>Telegram:
+            <a href="https://t.me/NikoSolov" target="_blank">
+                @NikoSolov
+            </a>
+        </p>
+    </address>
+
+    <p>
+        <small>© 2025 Николай Соловьев</small>
+    </p>
+</footer>
+
+</body>
+</html>
